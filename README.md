@@ -21,6 +21,12 @@ dash-generate-components ./src/lib/components dash_tiptap -p package.json
 ```bash
 python usage.py
 ```
+***
+**Using Docker**
+```bash
+docker build -t dash-tiptap .
+docker run -p 8050:8050 dash-tiptap
+```
 
 Check http://127.0.0.1:8050/ for result
 
@@ -44,3 +50,7 @@ This component bridges the gap between Python (Dash) and JavaScript (React) to p
 
 **Backend (Python)**:
 - **Dash**: `^3.3.0` (requires `dash[dev]` for component generation)
+****
+## Demo
+Attached the result video in the repository
+https://github.com/yesudoss/dash_tiptap/blob/main/result-vid.mp4
